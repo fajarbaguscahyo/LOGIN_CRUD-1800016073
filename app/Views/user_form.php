@@ -4,15 +4,15 @@
 <html lang="en">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
-    <a class="navbar-brand font-weight-bold" href="#">LOGIN FORM DENGAN CRUD<i class="fas fa-book-open ml-2"
-        style="color: #4e5052;"></i></a>
+    <a class="navbar-brand font-weight-bold" href="#">LOGIN FORM CRUD<i class="fas fa-book-open ml-2"
+        style="color: #6495ED;"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#"><i class="fas fa-user mr-3" style="color: #28acc9;"></i>Ristian Daegal Fasholli - 1800016043</a>
+        <a class="nav-item nav-link" href="#"><i class="fas fa-user mr-3" style="color: #28acc9;"></a>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-   <title>Login Form Dengan CRUD</title>
+   <title>Login Form CRUD</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                   <label for="password">Password Anda</label>
                   <input type="password" name="password" class="form-control" id="password">
                </div>
-               <button type="submit" class="btn btn-dark">Login</button>
+               <button type="submit" class="btn btn-success">Login</button>
             </form>
             <p>
                <?php if (!empty(session()->getFlashdata('gagal'))) { ?>

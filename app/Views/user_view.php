@@ -26,8 +26,8 @@
 <body>
 
    <div class="container mt-1">
-      <h1>Selamat Datang Di Halaman User, <?= session()->get('user_nama'); ?>.</h1>
-      <a class="btn btn-dark" href="/user/tambahdata" role="button">Menambahkan Data</a>
+      <h1>Selamat Datang , <?= session()->get('user_nama'); ?>.</h1>
+      <a class="btn btn-danger" href="/user/tambahdata" role="button">Tambah Data</a>
       <table class="table mt-3">
          <thead class="thead-dark">
             <tr>
@@ -44,15 +44,15 @@
                   <td><?= $row['user_nama']; ?></td>
                   <td><?= $row['user_email']; ?></td>
                   <td>
-                     <a class="btn btn-dark" href="/user/edit/<?= $row['user_id']; ?>" role="button">Edit</a>
-                     <a class="btn btn-dark text-white" onclick="hapusData(<?= $row['user_id']; ?>)" role="button">Delete</a>
+                     <a class="btn btn-success" href="/user/edit/<?= $row['user_id']; ?>" role="button">Edit</a>
+                     <a class="btn btn-primary" onclick="hapusData(<?= $row['user_id']; ?>)" role="button">Delete</a>
                   </td>
                </tr>
             <?php endforeach; ?>
          </tbody>
       </table>
 
-      <a class="btn btn-dark" href="<?= base_url('login/logout'); ?>" role="button">Logout -> Kembali Ke Login Form</a>
+      <a class="btn btn-danger" href="<?= base_url('login/logout'); ?>" role="button">Logout</a>
    </div>
 
    <script>
